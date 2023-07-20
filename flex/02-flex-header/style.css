@@ -1,6 +1,14 @@
 .header  {
   font-family: monospace;
   background: papayawhip;
+  /* Change the container to flexbox */
+  display: flex;
+  /* Make the items inside the container have even spacing in between them */
+  justify-content: space-between;
+  /* Align the items in the cross-axis centrally */
+  align-items: center;
+  /* Give a padding of 8px */
+  padding: 8px;
 }
 
 .logo {
@@ -9,11 +17,31 @@
   color: tomato;
   background: white;
   padding: 4px 32px;
+  /* Align the logo in the main an cross axis centrally */
+  justify-content: center;
+  align-items: center;
 }
 
 ul {
   /* this removes the dots on the list items*/
   list-style-type: none;
+  /* Change the container to flexbox */
+  display: flex;
+  /* Align the links in the main an cross axis centrally */
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  gap: 10px;
+}
+
+/* Shift the left items to the left */
+.left-links {
+  margin-right: auto;
+}
+
+/* Shift the right items to the right */
+.right-links {
+  margin-left: auto;
 }
 
 a {
