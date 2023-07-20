@@ -3,8 +3,13 @@
 body {
   height: 100vh;
   margin: 0;
+  padding: 0;
   overflow: hidden;
   font-family: Roboto, sans-serif;
+  /* Make the container a flexbox */
+  display: flex;
+  /* Flex direction changed to column */
+  flex-direction: column;
 }
 
 img {
@@ -25,3 +30,58 @@ input {
   width: 400px;
   margin-bottom: 16px;
 }
+
+ul {
+  /* Make the container a flexbox */
+  display: flex;
+  /* Remove bullet points from list */
+  list-style: none;
+  /* Reset the margin and padding */
+  margin: 0;
+  padding: 0;
+  /* Gap between each item in container */
+  gap: 16px;
+}
+
+a {
+  /* Remove underline from links */
+  text-decoration: none;
+  color: #666;
+}
+
+.header {
+  top: 0;
+  /* Make the container a flexbox */
+  display: flex;
+  /* Makes the remaining space between the left and right links */
+  justify-content: space-between;
+  /* Add padding between the container and its items */
+  padding: 15px;
+}
+
+.content {
+  /* Make the container a flexbox */
+  display: flex;
+  flex: 1;
+  /* Alaign items horizontally and vertically */
+  align-items: center;
+  justify-content: center;
+  /* Change the direction of the flex to column-wise */
+  flex-direction: column;
+}
+
+button {
+  padding: 10px;
+}
+
+.footer {
+  bottom: 0;
+  /* Make the container a flexbox */
+  display: flex;
+  /* Add padding between the container and its items */
+  padding: 15px;
+  /* Makes the remaining space between the left and right links */
+  justify-content: space-between;
+  background-color: lightgray;
+}
+
