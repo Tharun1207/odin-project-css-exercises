@@ -10,6 +10,28 @@ img {
 .title {
   font-size: 36px;
   font-weight: 900;
+  /* Makes the container a flexbox */
+  display: flex;
+  /* Align the item horizontally */
+  justify-content: center;
+  /* Create space between title and the items */
+  padding-bottom: 32px;
+}
+
+.info-sec {
+  /* Makes the container a flexbox */
+  display: flex;
+  /* Align the item horizontally */
+  justify-content: center;
+  /* Gap between each info section */
+  gap: 52px;
+}
+
+.info-sec-one, .info-sec-two, .info-sec-three, .info-sec-four {
+  /* Each info section has a max width of 200px */
+  max-width: 200px;
+  /* Items are centered */
+  text-align: center;
 }
 
 /* do not edit this footer */
