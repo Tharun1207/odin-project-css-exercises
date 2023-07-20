@@ -20,6 +20,28 @@ body {
   width: 480px;
   border-radius: 10px;
   box-shadow: 2px 4px 16px rgba(0,0,0,.2);
+  /* Making the container a flexbox */
+  display: flex;
+  /* Gap between each item */
+  gap: 20px;
+  /* Padding between the items in the container and the container itself */
+  padding: 20px;
+}
+
+.promptqn {
+  /* Making the container a flexbox */
+  display: flex;
+  /* Making the text bold */
+  font-weight: bold;
+  /* Gap between question and X mark */
+  justify-content: space-between;
+  /* Increasing the font size of the question */
+  font-size: larger;
+}
+
+.text {
+  /* Padding on top and bottom to separate the content items */
+  padding: 15px 0;
 }
 
 .icon {
@@ -33,6 +55,8 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  /* Making sure it does not get shrunk */
+  flex-shrink: 0;
 }
 
 .close-button {
