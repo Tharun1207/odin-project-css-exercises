@@ -2,28 +2,80 @@ body {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   margin: 0;
   min-height: 100vh;
+  display: flex;
+  /* Lay out everything column-wise */
+  flex-direction: column;
+}
+
+a {
+  /* Take out the underline and change the blue text to white, and change font size */
+  text-decoration: none;
+  color: white;
+  font-size: 24px;
+}
+
+li {
+  /* Create margin between each link */
+  margin-bottom: 16px;
+}
+
+ul {
+  /* Take out the bullet points and adjust the padding */
+  list-style: none;
+  padding: 0 16px;
 }
 
 .header {
   height: 72px;
   background: darkmagenta;
   color: white;
+  /* Align the header text and adjust font size and type */
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  font-size: 32px;
+  font-weight: 900;
+  padding-left: 16px; 
 }
 
 .footer {
   height: 72px;
   background: #eee;
   color: darkmagenta;
+  /* Center the contents in the footer container */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-content {
+  display: flex;
 }
 
 .sidebar {
   width: 300px;
   background: royalblue;
   box-sizing: border-box;
+  /* Make sure the sidebar doesn't shrink */
+  display: flex;
+  flex-shrink: 0;
 }
 
 .card {
   border: 1px solid #eee;
   box-shadow: 2px 4px 16px rgba(0,0,0,.06);
   border-radius: 4px;
+  /* Fix the width of each card and add margin and padding for proper spacing between each card */
+  display: flex;
+  width: 300px;
+  padding: 16px;
+  margin: 16px;
+  align-items: flex-start;
+}
+
+.card-container {
+  /* Group all the cards into their own container and add flex wrapping and padding around all the cards and the rest of the content */
+  display: flex;
+  padding: 32px;
+  flex-wrap: wrap;
 }
